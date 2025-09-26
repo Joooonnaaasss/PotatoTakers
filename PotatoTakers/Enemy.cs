@@ -5,16 +5,26 @@ namespace PotatoTakers
 {
     public class Enemy
     {
-        public Ellipse Visual { get; set; }
+        public double X { get; set; }
+        public double Y { get; set; }
+        public Rectangle Visual { get; set; }
 
-        public Enemy()
+        public Enemy(double x, double y)
         {
-            Visual = new Ellipse
+            X = x;
+            Y = y;
+
+            Visual = new Rectangle
             {
                 Width = 30,
                 Height = 30,
                 Fill = Brushes.Red
             };
+        }
+
+        public void Bewege()
+        {
+            X += 5; // Gegner läuft z. B. nach rechts
         }
     }
 }

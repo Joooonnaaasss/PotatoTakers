@@ -1,27 +1,30 @@
-﻿using System.Collections.Generic;
-using System.Windows.Shapes;
+﻿using System.Windows.Shapes;
 using System.Windows.Media;
 
 namespace PotatoTakers
 {
-    public class Tower
+    public class Schuss
     {
         public double X { get; set; }
         public double Y { get; set; }
         public Rectangle Visual { get; set; }
-        public List<Schuss> Schuesse { get; set; } = new List<Schuss>();
 
-        public Tower(double x, double y)
+        public Schuss(double x, double y)
         {
             X = x;
             Y = y;
 
             Visual = new Rectangle
             {
-                Width = 40,
-                Height = 40,
-                Fill = Brushes.Green
+                Width = 10,
+                Height = 5,
+                Fill = Brushes.Yellow
             };
+        }
+
+        public void Bewege()
+        {
+            X += 10; // fliegt nach rechts
         }
     }
 }
