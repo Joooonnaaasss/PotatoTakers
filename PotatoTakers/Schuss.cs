@@ -17,14 +17,9 @@ namespace PotatoTakers
             Visual = new Rectangle
             {
                 Width = 10,
-                Height = 5,
+                Height = 10,
                 Fill = Brushes.Yellow
             };
-        }
-
-        public void Bewege()
-        {
-            X += 10; // fliegt nach rechts
         }
     }
 }

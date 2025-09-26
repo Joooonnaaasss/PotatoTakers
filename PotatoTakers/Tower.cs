@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using System.Windows.Shapes;
 using System.Windows.Media;
+using System.Windows.Shapes;
 
 namespace PotatoTakers
 {
-
     public class Tower
     {
         public double X { get; set; }
