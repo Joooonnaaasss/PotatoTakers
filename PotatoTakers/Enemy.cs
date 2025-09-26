@@ -10,10 +10,8 @@ namespace PotatoTakers
         public Rectangle Visual { get; set; }
 
 
-        public Enemy(double x, double y)
+        public Enemy()
         {
-            X = x;
-            Y = y;
 
             Visual = new Rectangle
             {

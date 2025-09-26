@@ -9,20 +9,17 @@ namespace PotatoTakers
 {
     public partial class MainWindow : Window
     {
-        private DispatcherTimer timer;
 
         public MainWindow()
         {
+
             InitializeComponent();
 
-            timer = new DispatcherTimer();
-            timer.Tick += Timer_Tick;
-            timer.Start();
-        }
 
-        private void Timer_Tick(object? sender, EventArgs e)
-        { 
-        
+
+            Globel.Field = MyCanvas;
+            GameControl.Initializierung();
+
         }
     }
 }
