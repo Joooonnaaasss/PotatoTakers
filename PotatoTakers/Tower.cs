@@ -4,6 +4,7 @@ using System.Windows.Media;
 
 namespace PotatoTakers
 {
+
     public class Tower
     {
         public double X { get; set; }

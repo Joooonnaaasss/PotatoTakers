@@ -12,9 +12,17 @@ namespace PotatoTakers
         private DispatcherTimer shootTimer;   // Türme schießen
         private bool placingTower = false;
 
-        public MainWindow()
-        {
-            InitializeComponent();
+            // Rotes Rechteck als Platzhalter
+            Rectangle rect = new Rectangle
+            {
+                Width = 30,
+                Height = 30,
+                Fill = Brushes.Red
+            };
+            MyCanvas.Children.Add(rect);
+            Canvas.SetLeft(rect, enemy.X);
+            Canvas.SetTop(rect, enemy.Y);
+        }
 
             // Timer für Gegner
             enemyTimer = new DispatcherTimer();
